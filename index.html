@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>IQ Test</title>
+    </head>
+    <body>
+        <center>
+        <h1>IQ Test</h1>
+        <p>Question 1:</p>
+        <p>What is the dot in an 'i' called?</p>
+        <form>
+            <input type="radio" name="item" value="jittle">
+            <label for="jittle">jittle</label>
+            <br>
+            <input type="radio" name="item" value="tittle">
+            <label for="tittle">tittle</label>
+            <br>
+            <input type="radio" name="item" value="wittle">
+            <label for="wittle">wittle</label>
+            <br>
+            <input type="radio" name="item" value="dot">
+            <label for="dot">dot</label>
+            <br>
+            <input type="radio" name="item" value="noname">
+            <label for="noname">no name</label>
+        </form>
+        <button onclick="dothing()">Submit</button>
+        </center>
+        <script>
+            const iq = Math.floor((Math.random() * 80) + 50)
+            const animals = [
+                "turtle",
+                "university",
+                "primary school",
+                "high school",
+                "kindergarten",
+                "college",
+                "NASA",
+                "distance education student",
+                "fetus",
+            ]
+            const level = animals[Math.floor(Math.random() * animals.length)]
+            function dothing() {
+                alert("You have an IQ of: " + iq + ". That is " + level + " level.")
+            }
+        </script>
+    </body>
+</html>
